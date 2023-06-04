@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#129A7F</color>
+    <color name="colorPrimaryVariant">#005040</color>
+    <color name="cultured_background">#F6F6F6</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="rhythm">#777A95</color>
+    <color name="silver_sand">#C0C0C3</color>
+    <color name="metallic_silver">#A0A2B3</color>
+
+</resources>
