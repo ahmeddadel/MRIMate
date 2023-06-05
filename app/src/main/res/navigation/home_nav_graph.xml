@@ -12,30 +12,53 @@
         <action
             android:id="@+id/action_listPatientsFragment_to_listScansFragment"
             app:destination="@id/listScansFragment"/>
+        <action
+            android:id="@+id/action_listPatientsFragment_to_scanFragment"
+            app:destination="@id/scanFragment"
+            app:popUpTo="@id/listPatientsFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/savedFragment"
         android:name="com.dolla.mrimate.ui.fragments.SavedFragment"
-        tools:layout="@layout/fragment_saved" />
+        tools:layout="@layout/fragment_saved" >
+        <action
+            android:id="@+id/action_savedFragment_to_scanFragment"
+            app:destination="@id/scanFragment"
+            app:popUpTo="@id/listPatientsFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/aboutUsFragment"
         android:name="com.dolla.mrimate.ui.fragments.AboutUsFragment"
-        tools:layout="@layout/fragment_about_us" />
+        tools:layout="@layout/fragment_about_us" >
+        <action
+            android:id="@+id/action_aboutUsFragment_to_scanFragment"
+            app:destination="@id/scanFragment"
+            app:popUpTo="@id/listPatientsFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.dolla.mrimate.ui.fragments.SettingsFragment"
-        tools:layout="@layout/fragment_settings" />
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_scanFragment"
+            app:destination="@id/scanFragment"
+            app:popUpTo="@id/listPatientsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/scanFragment"
         android:name="com.dolla.mrimate.ui.fragments.ScanFragment"
         tools:layout="@layout/fragment_scan">
         <action
-            android:id="@+id/action_scanFragment_to_listFragment"
+            android:id="@+id/action_scanFragment_to_listPatientsFragment"
             app:destination="@id/listPatientsFragment"
             app:popUpTo="@id/listPatientsFragment" />
+        <action
+            android:id="@+id/action_scanFragment_to_listScansFragment"
+            app:destination="@id/listScansFragment"
+            app:popUpTo="@id/listScansFragment" />
     </fragment>
     <fragment
         android:id="@+id/listScansFragment"
@@ -45,10 +68,19 @@
         <action
             android:id="@+id/action_listScansFragment_to_resultFragment"
             app:destination="@id/resultFragment" />
+        <action
+            android:id="@+id/action_listScansFragment_to_scanFragment"
+            app:destination="@id/scanFragment"
+            app:popUpTo="@id/listScansFragment" />
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
         android:name="com.dolla.mrimate.ui.fragments.ResultFragment"
         android:label="fragment_result"
-        tools:layout="@layout/fragment_result" />
+        tools:layout="@layout/fragment_result" >
+        <action
+            android:id="@+id/action_resultFragment_to_scanFragment"
+            app:destination="@id/scanFragment"
+            app:popUpTo="@id/listPatientsFragment" />
+    </fragment>
 </navigation>

@@ -28,7 +28,14 @@ class HomeActivity : AppCompatActivity() {
         NavigationUI.setupWithNavController(binding.bottomNavView, navController)
 
         binding.fabScan.setOnClickListener {
-            navController.navigate(R.id.scanFragment)
+            when (navController.currentDestination?.id) {
+                R.id.listPatientsFragment -> navController.navigate(R.id.action_listPatientsFragment_to_scanFragment)
+                R.id.listScansFragment -> navController.navigate(R.id.action_listScansFragment_to_scanFragment)
+                R.id.resultFragment -> navController.navigate(R.id.action_resultFragment_to_scanFragment)
+                R.id.savedFragment -> navController.navigate(R.id.action_savedFragment_to_scanFragment)
+                R.id.aboutUsFragment -> navController.navigate(R.id.action_aboutUsFragment_to_scanFragment)
+                R.id.settingsFragment -> navController.navigate(R.id.action_settingsFragment_to_scanFragment)
+            }
             // set the selected item in the bottom navigation view to the scan fragment
             binding.bottomNavView.selectedItemId = R.id.place_holder
         }
@@ -36,7 +43,10 @@ class HomeActivity : AppCompatActivity() {
 
     override fun onBackPressed() {
         if (navController.currentDestination?.id == R.id.scanFragment) { // if we are in the scan fragment
-            navController.navigate(R.id.action_scanFragment_to_listFragment) // navigate to the home fragment
+            navController.navigate(R.id.action_scanFragment_to_listPatientsFragment) // navigate to the home fragment
+            navController.popBackStack() // pop the back stack
+        } else if (navController.currentDestination?.id == R.id.scanFragment && !isDoctor) { // if we are in the scan fragment
+            navController.navigate(R.id.action_scanFragment_to_listScansFragment) // navigate to the home fragment
             navController.popBackStack() // pop the back stack
         } else if (navController.currentDestination?.id == R.id.listScansFragment && !isDoctor) // if we are in the home fragment
             finish() // finish the activity
