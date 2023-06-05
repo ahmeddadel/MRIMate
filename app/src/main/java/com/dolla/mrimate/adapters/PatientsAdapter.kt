@@ -6,7 +6,6 @@ import android.view.animation.AnimationUtils
 import androidx.recyclerview.widget.RecyclerView
 import com.dolla.mrimate.databinding.ItemListBinding
 import com.dolla.mrimate.pojo.Patient
-import com.dolla.mrimate.util.deserializeBitmap
 
 /**
  * @created 05/06/2023 - 11:54 AM
