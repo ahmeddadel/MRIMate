@@ -1,6 +1,9 @@
 package com.dolla.mrimate.util
 
 import com.dolla.mrimate.R
+import com.dolla.mrimate.pojo.Doctor
+import com.dolla.mrimate.pojo.Patient
+import com.dolla.mrimate.pojo.Scan
 
 /**
  * @created 25/12/2022 - 1:09 AM
@@ -8,13 +11,18 @@ import com.dolla.mrimate.R
  * @author adell
  */
 
-// Constants used throughout the app
+var isDoctor = false
+var doctorObj: Doctor? = null
+var patientObj: Patient? = null
+var passedPatientObj: Patient? = null
+var passedScanObj: Scan? = null
 
+// Constants used throughout the app
 const val SPLASH_SCREEN_DELAY: Long = 1500 // 1.5 seconds
 const val ERROR_MESSAGE_DELAY: Long = 2000 // 2 seconds
 
-const val PATIENTS_COLLECTION = "patients"
-const val DOCTORS_COLLECTION = "doctors"
+const val PATIENTS_FILE_NAME = "patients"
+const val DOCTORS_FILE_NAME = "doctors"
 const val USERS_COLLECTION = "users"
 
 // user details keys for cloud firestore
@@ -41,13 +49,13 @@ const val VERIFICATION_EMAIL_SENT_MESSAGE = "Verification email has been sent to
 const val VERIFICATION_REQUIRED_MESSAGE = "Please verify your email"
 const val PASSWORD_RESET_MESSAGE = "Password reset link has been sent to your email"
 const val SIGN_IN_SUCCESS_MESSAGE = "Sign in successful"
+const val SIGN_UP_SUCCESS_MESSAGE = "Sign in successful"
 const val USER_DOES_NOT_EXIST_MESSAGE = "User does not exist"
 
 const val UNKNOWN_ERROR_MESSAGE = "An unknown error occurred"
 
 // Regex for password validation
 val PASSWORD_REGEX = Regex("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])[a-zA-Z0-9!@#\$%^&*+=_]{6,}$")
-
 
 // Onboarding images
 val onboardingImages = arrayOf(

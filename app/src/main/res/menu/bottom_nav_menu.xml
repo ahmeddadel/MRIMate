@@ -2,9 +2,8 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group android:checkableBehavior="single">
-
         <item
-            android:id="@+id/listFragment"
+            android:id="@+id/listPatientsFragment"
             android:icon="@drawable/ic_list"
             android:title="@string/list" />
 
@@ -26,6 +25,5 @@
             android:id="@+id/settingsFragment"
             android:icon="@drawable/ic_settings"
             android:title="@string/settings" />
-
     </group>
 </menu>

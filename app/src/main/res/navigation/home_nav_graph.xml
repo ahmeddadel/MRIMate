@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listPatientsFragment">
+
+    <fragment
+        android:id="@+id/listPatientsFragment"
+        android:name="com.dolla.mrimate.ui.fragments.ListPatientsFragment"
+        tools:layout="@layout/fragment_list_patients">
+        <action
+            android:id="@+id/action_listPatientsFragment_to_listScansFragment"
+            app:destination="@id/listScansFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/savedFragment"
+        android:name="com.dolla.mrimate.ui.fragments.SavedFragment"
+        tools:layout="@layout/fragment_saved" />
+
+    <fragment
+        android:id="@+id/aboutUsFragment"
+        android:name="com.dolla.mrimate.ui.fragments.AboutUsFragment"
+        tools:layout="@layout/fragment_about_us" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.dolla.mrimate.ui.fragments.SettingsFragment"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/scanFragment"
+        android:name="com.dolla.mrimate.ui.fragments.ScanFragment"
+        tools:layout="@layout/fragment_scan">
+        <action
+            android:id="@+id/action_scanFragment_to_listFragment"
+            app:destination="@id/listPatientsFragment"
+            app:popUpTo="@id/listPatientsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listScansFragment"
+        android:name="com.dolla.mrimate.ui.fragments.ListScansFragment"
+        android:label="fragment_list_scans"
+        tools:layout="@layout/fragment_list_scans" >
+        <action
+            android:id="@+id/action_listScansFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.dolla.mrimate.ui.fragments.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" />
+</navigation>

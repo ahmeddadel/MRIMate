@@ -11,4 +11,7 @@
     <color name="silver_sand">#C0C0C3</color>
     <color name="metallic_silver">#A0A2B3</color>
 
+    <color name="gray">#BEB8B4B4</color>
+
+    <color name="transparent">#00000000</color>
 </resources>

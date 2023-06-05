@@ -21,6 +21,7 @@
         <entry key="..\:/Users/adell/AndroidStudioProjects/MRIMate/app/src/main/res/drawable/ic_lung_2.xml" value="0.163" />
         <entry key="..\:/Users/adell/AndroidStudioProjects/MRIMate/app/src/main/res/drawable/ic_numbers.xml" value="0.2515" />
         <entry key="..\:/Users/adell/AndroidStudioProjects/MRIMate/app/src/main/res/drawable/ic_person.xml" value="0.2515" />
+        <entry key="..\:/Users/adell/AndroidStudioProjects/MRIMate/app/src/main/res/drawable/ic_person_2.xml" value="0.242" />
         <entry key="..\:/Users/adell/AndroidStudioProjects/MRIMate/app/src/main/res/drawable/ic_scan.xml" value="0.207" />
         <entry key="..\:/Users/adell/AndroidStudioProjects/MRIMate/app/src/main/res/drawable/ic_twitter.xml" value="0.201" />
         <entry key="..\:/Users/adell/AndroidStudioProjects/MRIMate/app/src/main/res/drawable/ic_untitled.xml" value="0.205" />
@@ -34,11 +35,18 @@
         <entry key="..\:/Users/adell/AndroidStudioProjects/MRIMate/app/src/main/res/layout/activity_sign_in.xml" value="0.28607594936708863" />
         <entry key="..\:/Users/adell/AndroidStudioProjects/MRIMate/app/src/main/res/layout/activity_sign_up.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/adell/AndroidStudioProjects/MRIMate/app/src/main/res/layout/activity_splash_screen.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/adell/AndroidStudioProjects/MRIMate/app/src/main/res/layout/fragment_about_us.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/adell/AndroidStudioProjects/MRIMate/app/src/main/res/layout/fragment_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/adell/AndroidStudioProjects/MRIMate/app/src/main/res/layout/fragment_about_us.xml" value="0.264" />
+        <entry key="..\:/Users/adell/AndroidStudioProjects/MRIMate/app/src/main/res/layout/fragment_list.xml" value="0.22592592592592592" />
+        <entry key="..\:/Users/adell/AndroidStudioProjects/MRIMate/app/src/main/res/layout/fragment_list_scans.xml" value="0.2421875" />
+        <entry key="..\:/Users/adell/AndroidStudioProjects/MRIMate/app/src/main/res/layout/fragment_registration.xml" value="0.2421875" />
+        <entry key="..\:/Users/adell/AndroidStudioProjects/MRIMate/app/src/main/res/layout/fragment_result.xml" value="0.264" />
         <entry key="..\:/Users/adell/AndroidStudioProjects/MRIMate/app/src/main/res/layout/fragment_saved.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/adell/AndroidStudioProjects/MRIMate/app/src/main/res/layout/fragment_scan.xml" value="0.264" />
         <entry key="..\:/Users/adell/AndroidStudioProjects/MRIMate/app/src/main/res/layout/fragment_setting.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/adell/AndroidStudioProjects/MRIMate/app/src/main/res/layout/fragment_settings.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/adell/AndroidStudioProjects/MRIMate/app/src/main/res/layout/fragment_sign_in.xml" value="0.2421875" />
+        <entry key="..\:/Users/adell/AndroidStudioProjects/MRIMate/app/src/main/res/layout/fragment_sign_up.xml" value="0.2421875" />
+        <entry key="..\:/Users/adell/AndroidStudioProjects/MRIMate/app/src/main/res/layout/item_list.xml" value="0.264" />
         <entry key="..\:/Users/adell/AndroidStudioProjects/MRIMate/app/src/main/res/layout/onboarding_images_holder.xml" value="0.253125" />
         <entry key="..\:/Users/adell/AndroidStudioProjects/MRIMate/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25416666666666665" />
       </map>

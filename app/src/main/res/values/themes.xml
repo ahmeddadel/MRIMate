@@ -7,16 +7,26 @@
         <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
         <item name="colorOnPrimary">@color/white</item>
         <item name="android:colorBackground">@color/cultured_background</item>
-        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
 
     <!-- Host Activity theme. -->
-    <style name="Theme.MRIMate.Host" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.MRIMate.Home" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
         <item name="colorOnPrimary">@color/white</item>
         <item name="android:colorBackground">@color/cultured_background</item>
         <item name="actionBarSize">48dip</item>
         <item name="android:actionBarSize">48dip</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+    </style>
+
+    <!--  style for SplashScreenActivity -->
+    <style name="Theme.MRIMate.Fullscreen">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
     </style>
 </resources>

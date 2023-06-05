@@ -3,17 +3,14 @@ package com.dolla.mrimate.ui.activities
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.ViewPager
 import com.dolla.mrimate.R
-import com.dolla.mrimate.RegistrationActivity
 import com.dolla.mrimate.adapters.OnboardingAdapter
 import com.dolla.mrimate.databinding.ActivityOnboardingBinding
 import com.dolla.mrimate.util.onboardingBodies
 import com.dolla.mrimate.util.onboardingTitles
-import com.dolla.mrimate.util.setContentViewCustom
 
-class OnboardingActivity : AppCompatActivity() {
+class OnboardingActivity : BaseActivity() {
 
     private lateinit var binding: ActivityOnboardingBinding
 
@@ -85,6 +82,7 @@ class OnboardingActivity : AppCompatActivity() {
     // navigate to the registration activity and finish this activity
     private fun navigateToRegistrationActivity() {
         startActivity(Intent(this, RegistrationActivity::class.java))
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
         finish()
     }
 }

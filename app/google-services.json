@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1003473676977",
+    "project_id": "mrimate-2911f",
+    "storage_bucket": "mrimate-2911f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1003473676977:android:464221f6b6546ede485090",
+        "android_client_info": {
+          "package_name": "com.dolla.mrimate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1003473676977-bp820t4p0km3fv1jh0nu4qnnu6tjmklm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dolla.mrimate",
+            "certificate_hash": "1665d7c0d6597cabca4366ffefbd4a843901b219"
+          }
+        },
+        {
+          "client_id": "1003473676977-v14ci8ju905soom3d66d1c84sjvtkvfk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTjdXVnIBp1jLTAvBEZDAYcsWaC29Kgw0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1003473676977-v14ci8ju905soom3d66d1c84sjvtkvfk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
