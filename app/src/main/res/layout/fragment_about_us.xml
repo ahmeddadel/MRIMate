@@ -188,7 +188,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_5sdp"
                 android:gravity="center"
-                android:text="Tamer\nShamseldin"
+                android:text="Dr. Tamer\nShamseldin"
                 android:textSize="@dimen/_9ssp"
                 android:textStyle="bold" />
         </LinearLayout>
