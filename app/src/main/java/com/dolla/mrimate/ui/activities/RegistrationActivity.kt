@@ -76,6 +76,7 @@ class RegistrationActivity : BaseActivity() {
         GlobalScope.launch(Dispatchers.IO) {
 
             for (patient in listOfPatients) {
+                val scansList = ArrayList<Scan>()
                 for (i in 0..Random.nextInt(0, 3)) {
 
                     BitmapFactory.decodeStream(assets.open("image${Random.nextInt(1, 61)}.jpg"))
@@ -142,7 +143,7 @@ class RegistrationActivity : BaseActivity() {
                                     scan.report = report
                                 }
 
-                                patient.scans.plus(scan)
+                                scansList.add(scan)
                                 model.close() // Releases model resources if no longer used.
                             } catch (e: Exception) {
                                 e.printStackTrace()
@@ -150,6 +151,7 @@ class RegistrationActivity : BaseActivity() {
                         }
 
                 }
+                patient.scans = scansList
                 patient.appendToFile(applicationContext)
             }
         }
