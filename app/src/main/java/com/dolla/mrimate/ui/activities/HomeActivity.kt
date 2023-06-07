@@ -39,6 +39,36 @@ class HomeActivity : AppCompatActivity() {
             // set the selected item in the bottom navigation view to the scan fragment
             binding.bottomNavView.selectedItemId = R.id.place_holder
         }
+        onNavigationItemSelected()
+    }
+
+    private fun onNavigationItemSelected() {
+        binding.bottomNavView.setOnNavigationItemSelectedListener { menuItem ->
+            when (menuItem.itemId) {
+                R.id.savedFragment -> {
+                    navController.popBackStack(R.id.savedFragment, true)
+                    navController.navigate(R.id.savedFragment)
+                }
+                R.id.aboutUsFragment -> {
+                    navController.popBackStack(R.id.aboutUsFragment, true)
+                    navController.navigate(R.id.aboutUsFragment)
+                }
+                R.id.settingsFragment -> {
+                    navController.popBackStack(R.id.settingsFragment, true)
+                    navController.navigate(R.id.settingsFragment)
+                }
+                R.id.listPatientsFragment -> {
+                    if (isDoctor) {
+                        navController.popBackStack(R.id.listPatientsFragment, true)
+                        navController.navigate(R.id.listPatientsFragment)
+                    } else {
+                        navController.popBackStack(R.id.listScansFragment, true)
+                        navController.navigate(R.id.listScansFragment)
+                    }
+                }
+            }
+            true
+        }
     }
 
     override fun onBackPressed() {
