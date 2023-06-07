@@ -13,13 +13,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_16sdp"
         android:layout_marginTop="@dimen/_12sdp"
+        android:text="Patients"
         android:textColor="@color/rhythm"
         android:textSize="@dimen/_25ssp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="TextContrastCheck"
-        android:text="Patients" />
+        tools:ignore="TextContrastCheck" />
 
     <View
         android:id="@+id/view_divider"
@@ -49,8 +49,9 @@
         android:id="@+id/progress_bar"
         android:layout_width="@dimen/_100sdp"
         android:layout_height="@dimen/_100sdp"
-        android:visibility="visible"
+        android:indeterminateTint="@color/colorPrimary"
         android:progressTint="@color/colorPrimaryVariant"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

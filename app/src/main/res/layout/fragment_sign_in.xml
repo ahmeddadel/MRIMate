@@ -22,6 +22,7 @@
         android:id="@+id/progress_bar"
         android:layout_width="@dimen/_100sdp"
         android:layout_height="@dimen/_100sdp"
+        android:indeterminateTint="@color/colorPrimary"
         android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@+id/bt_sign_in"
         app:layout_constraintEnd_toEndOf="parent"
